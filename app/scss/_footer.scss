@@ -1,0 +1,217 @@
+.footer {
+  background-color: $white;
+  color: $black;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+  
+  @include breakpoint-up(large) {
+    text-align: left;
+
+  }
+  .container {
+    @include breakpoint-up(large) {
+      display: grid;
+      grid-template-columns: 1fr, 1fr, repeat(5, 1fr);
+      grid-template-rows: 1fr auto;
+      grid-template-areas:
+        "logo links1 links2 links3 links4 links5"
+        "social links6 links2 links3 links4 links5";
+      gap: 1rem;
+      justify-items: start;
+    }
+  }
+
+  a {
+    color: $black;
+  }
+
+  &__logo {
+    display: inline-block;
+
+    @include breakpoint-down(medium) {
+      margin-bottom: 1.875rem;
+    }
+
+    @include breakpoint-up(large) {
+      grid-area: logo;
+      margin-bottom: 1.25rem;
+
+    }
+  }
+
+  &__simpleText{
+    @include breakpoint-up(large) {
+
+      display: block;
+      margin-bottom: 4.25rem;
+      max-width: 290px;
+      text-align: left;
+    }
+     
+    
+  }
+
+  &__sponsor{
+    @include breakpoint-up(large) {
+      align-self: start;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  &__simpleText2{
+    @include breakpoint-up(large) {
+
+      display: block;
+      margin-bottom: 1.25rem;
+      max-width: 290px;
+      text-align: left;
+      margin-top: 1.875rem;
+        
+    }
+  }
+
+
+
+  &__social {
+    @include breakpoint-down(medium) {
+      margin-bottom: 1.875rem;
+    }
+
+    @include breakpoint-up(large) {
+      grid-area: social;
+      align-self: end;
+
+    }
+
+    a {
+      display: inline-block;
+      height: 1.625rem;
+    }
+
+    a:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9375rem;
+
+    @include breakpoint-up(large) {
+      justify-content: space-between;
+      align-items: start;
+      max-height: 30px;
+    }
+
+    &.col1 {
+      @include breakpoint-up(large) {
+        grid-area: links1;
+        padding-top: 2.5rem;
+      }
+    }
+
+    &.col2 {
+        @include breakpoint-up(large) {
+          grid-area: links2;
+        padding-top: 2.5rem;
+
+        //   margin-bottom: 10px;
+        // justify-content: none;
+        }
+      }
+
+    // &.col2 {
+    //   @include breakpoint-down(medium) {
+    //     margin-bottom: 1.875rem;
+    //   }
+    //   @include breakpoint-up(large) {
+    //     grid-area: links2;
+    //   }
+    // }
+
+    &.col3 {
+      @include breakpoint-down(medium) {
+        margin-bottom: 1.875rem;
+      }
+      @include breakpoint-up(large) {
+        grid-area: links3;
+        padding-top: 2.5rem;
+
+      }
+    }
+
+    &.col4 {
+      @include breakpoint-down(medium) {
+        margin-bottom: 1.875rem;
+        
+      }
+      @include breakpoint-up(large) {
+        grid-area: links4;
+        padding-top: 2.5rem;
+        
+
+      }
+    }
+
+    &.col5 {
+      @include breakpoint-down(medium) {
+        margin-bottom: 1.875rem;
+      }
+      @include breakpoint-up(large) {
+        padding-top: 2.5rem;
+        grid-area: links5;
+      max-height: 50px;
+
+      }
+    }
+
+    &.col6 {
+        @include breakpoint-up(large) {
+          grid-area: links6;
+          align-self: start;
+          justify-self: start;
+        padding-top: 2.5rem;
+        max-height: 125px;
+          max-width: 300px;
+
+        }
+      }
+
+
+
+    a {
+      line-height: 2.25;
+    }
+  }
+
+//   &__cta {
+//     @include breakpoint-up(large) {
+//       grid-area: cta;
+//       justify-self: end;
+//       text-align: right;
+//     }
+
+//     a.button {
+//       @include breakpoint-down(medium) {
+//         margin-bottom: 1.875rem;
+//       }
+//     }
+//   }
+
+  &__copyright {
+    font-size: 0.8125rem;
+    color: $grayishBlue;
+
+    @include breakpoint-up(large) {
+      grid-area: copyright;
+
+      justify-self: end;
+      align-self: end;
+    }
+  }
+
+}
