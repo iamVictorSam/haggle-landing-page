@@ -241,13 +241,53 @@
 
   &__copyright {
     font-size: 0.8125rem;
-    color: $grayishBlue;
+    color: $white;
+    text-align: center;
+    background-color: black;
+    padding: 1rem;
 
     @include breakpoint-up(large) {
-      grid-area: copyright;
 
       justify-self: end;
       align-self: end;
+    }
+  }
+
+  &__images{
+    position: absolute;
+    top: 176rem;
+    left: 21.5rem;
+  }
+
+  &__apple-store {
+    @include breakpoint-up(large) {
+      padding-top: 1.125rem;
+      padding-left: 1.125rem;
+      padding-bottom: 0.625rem;
+    }
+    @include breakpoint-up(medium) {
+      padding-top: 1.125rem;
+      padding-left: 1.125rem;
+      padding-bottom: 0.625rem;
+    }
+    @include breakpoint-down(small) {
+      display: block;
+      // padding-top: 0.625rem;
+    }
+  }
+
+  &__apple-store {
+    @include breakpoint-up(large) {
+      padding-top: 0.625rem;
+    }
+    @include breakpoint-up(medium) {
+      padding-top: 0.625rem;
+    }
+
+    @include breakpoint-down(small) {
+      display: block;
+      margin: auto;
+      text-align: center;
     }
   }
 
