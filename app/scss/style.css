@@ -552,7 +552,7 @@ input[type=text]:-moz-placeholder {
     width: 400%;
     background-size: 12%;
     background-position: 0% 83%;
-    left: 60%;
+    left: 52%;
   }
 }
 
@@ -579,8 +579,8 @@ input[type=text]:-moz-placeholder {
     height: 104%;
     background-size: 47%;
     background-position: center 15%;
-    left: 47%;
-    top: 16%;
+    left: 37%;
+    top: 27%;
   }
 }
 
@@ -596,15 +596,15 @@ input[type=text]:-moz-placeholder {
 
 .hero__image2 {
   position: absolute;
-  height: 23rem;
-  left: 30.5rem;
-  bottom: -5.2rem;
+  height: 22rem;
+  left: 20.5rem;
+  bottom: -6.0rem;
 }
 
 .hero__image1 {
   position: absolute;
-  height: 21rem;
-  left: 27.5rem;
+  height: 17rem;
+  left: 18.06rem;
   bottom: 11.2rem;
 }
 
