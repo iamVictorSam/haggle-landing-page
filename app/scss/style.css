@@ -1224,6 +1224,7 @@ input[type=text]:-moz-placeholder {
     display: block;
     margin-bottom: 4.25rem;
     max-width: 290px;
+    font-size: 0.875rem;
     text-align: left;
   }
 }
@@ -1245,6 +1246,7 @@ input[type=text]:-moz-placeholder {
     max-width: 290px;
     text-align: left;
     margin-top: 1.875rem;
+    font-size: 0.875rem;
   }
 }
 
@@ -1390,8 +1392,13 @@ input[type=text]:-moz-placeholder {
   font-weight: bold;
 }
 
+.footer__links.col6 > a:first-child:hover {
+  color: black;
+}
+
 .footer__links a {
   line-height: 2.25;
+  font-size: 0.875rem;
 }
 
 .footer__links a:hover {
