@@ -95,18 +95,11 @@ body {
   font-size: 1.125rem;
   color: #9698a6;
   line-height: 1.3;
-  overflow-x: hidden;
 }
 
 @media (min-width: 64em) {
   body {
     font-size: 1.125rem;
-  }
-}
-
-@media (min-width: 40em) {
-  body {
-    overflow-x: hidden;
   }
 }
 
@@ -1193,6 +1186,10 @@ input[type=text]:-moz-placeholder {
     margin: auto;
     text-align: center;
   }
+}
+
+.money__textfield {
+  padding-top: 0.78rem;
 }
 
 .footer {

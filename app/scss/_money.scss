@@ -160,4 +160,13 @@
         }
 
     }
+
+    &__textfield{
+        padding-top: 0.78rem;
+
+        // @include firefox-only {
+        //     padding-top: 0.79rem;
+        //   }
+       
+    }
 }
