@@ -5,12 +5,13 @@
     @include breakpoint-up(large) {
       display: flex;
       align-items: center;
+      // height: 62rem;
     }
   }
 
-  &__textfield {
-      text-align: center;
-  }
+  // &__textfield {
+       // text-align: center;
+  // }
 
   &__image {
     position: relative;
@@ -28,6 +29,7 @@
     @include breakpoint-up(large) {
       flex: 3;
       order: 2;
+
       min-height: 41rem;
       background-image: none;
       // background-image: url("/images/bg-intro-desktop.svg");
@@ -188,4 +190,38 @@
       text-align: center;
     }
   }
+
+  &__barger{
+    display: inline;
+    background-color: red;
+    padding: 0px 10px;
+    border-radius: 10px;  
+
+  }
+
+  &__textfield-btn{
+    margin: 0px;
+    display: inline;
+    position: relative;
+    border-radius: 0px 50px 50px 0px;
+    // padding: px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.9375rem;
+    padding-left: 0.9375rem;
+    padding-right: 1.125rem;  
+    font-size: 17px;
+    left:-0.3125rem;
+    color: black;
+    font-weight: 700;
+    background-color: aqua;
+
+        @include firefox-only {
+          padding-top: 0.79rem;
+        }
+     
+  }
+
+  // &__container--bottom{
+  //   margin-bottom: 4rem;
+  // }
 }
