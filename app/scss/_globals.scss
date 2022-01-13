@@ -25,8 +25,8 @@ body {
     font-size: $font-med;
   }
 
-  @include breakpoint-up(medium){
-    // overflow-x: hidden;
+  @include breakpoint-down(medium){
+    overflow-x: hidden;
   }
 
   &.noscroll{
@@ -115,11 +115,13 @@ a, a:visited, a:hover{
 button, .button{
   display: inline-block;
   padding: 0.875rem 2.1875rem; 
-  background: linear-gradient(to right, $limeGreen, $brightCyan);
+  // background: linear-gradient(to right, $limeGreen, $brightCyan);
   border-radius: 8px;
-  cursor: pointer;
+  background-color: transparent;
+  cursor: none;
   border: 0;
-  color: $white; 
+  // color: $white; 
+  color: transparent; 
   font-weight: 400;
   font-size: $font-sm;
   // color: $white;

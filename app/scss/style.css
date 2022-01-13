@@ -103,6 +103,12 @@ body {
   }
 }
 
+@media (max-width: 63.9375em) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
 body.noscroll {
   overflow: hidden;
 }
@@ -180,12 +186,11 @@ a, a:visited, a:hover {
 button, .button {
   display: inline-block;
   padding: 0.875rem 2.1875rem;
-  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
-  background: linear-gradient(to right, #31d35c, #2bb7da);
   border-radius: 8px;
-  cursor: pointer;
+  background-color: transparent;
+  cursor: none;
   border: 0;
-  color: white;
+  color: transparent;
   font-weight: 400;
   font-size: 0.875rem;
   -webkit-transition: opacity 300ms ease-in-out;
@@ -318,6 +323,7 @@ button:hover, .button:hover {
   left: 0;
   right: 0;
   bottom: -22px;
+  border-radius: 10px;
   background: white;
   opacity: 0;
   -webkit-transition: opacity 300ms ease-in-out;
@@ -325,11 +331,25 @@ button:hover, .button:hover {
 }
 
 .header__links a:hover {
-  color: #2d314d;
+  color: grey;
 }
 
 .header__links a:hover::before {
   opacity: 1;
+}
+
+.header__barger {
+  display: inline;
+  color: white;
+  font-weight: 100;
+  font-size: 0.8rem;
+  background-color: red;
+  padding: 0px 5px;
+  border-radius: 10px;
+}
+
+.header__barger::before {
+  opacity: 0;
 }
 
 input[type=text] {
@@ -676,13 +696,6 @@ input[type=text]:-moz-placeholder {
   }
 }
 
-.hero__barger {
-  display: inline;
-  background-color: red;
-  padding: 0px 10px;
-  border-radius: 10px;
-}
-
 .hero__textfield-btn {
   margin: 0px;
   display: inline;
@@ -707,6 +720,7 @@ input[type=text]:-moz-placeholder {
 
 .objective {
   background-color: white;
+  color: grey;
 }
 
 @media (min-width: 64em) {
@@ -905,19 +919,11 @@ input[type=text]:-moz-placeholder {
 
 @media (min-width: 64em) {
   .objective__contents {
-    color: grey;
     grid-area: contents;
     margin-top: 15rem;
     position: relative;
+    z-index: 1;
   }
-}
-
-.objective__contents:hover {
-  color: black;
-}
-
-.objective__contents:hover::before {
-  opacity: 1;
 }
 
 @media (min-width: 64em) {
@@ -932,16 +938,7 @@ input[type=text]:-moz-placeholder {
   .objective__desc {
     font-weight: 400;
     font-size: 1rem;
-    color: black;
   }
-}
-
-.objective__desc:hover {
-  color: grey;
-}
-
-.objective__desc:hover::before {
-  opacity: 1;
 }
 
 @media (min-width: 64em) {
@@ -951,14 +948,6 @@ input[type=text]:-moz-placeholder {
             flex: 18;
     max-width: 18rem;
   }
-}
-
-.objective__content:hover {
-  color: grey;
-}
-
-.objective__content:hover::before {
-  opacity: 1;
 }
 
 .objective__number {
@@ -972,18 +961,10 @@ input[type=text]:-moz-placeholder {
   line-height: 2.5em;
   text-align: center;
   border-radius: 50%;
-  background: grey;
+  background: black;
   vertical-align: middle;
   margin-right: 1em;
   color: white;
-}
-
-.objective__number:hover {
-  background: black;
-}
-
-.objective__number:hover::before {
-  opacity: 1;
 }
 
 @media (min-width: 64em) {
@@ -1001,28 +982,13 @@ input[type=text]:-moz-placeholder {
   }
 }
 
-.objective__textContents:hover {
-  color: black;
-}
-
-.objective__textContents:hover::before {
-  opacity: 1;
-}
-
 .objective__vert {
   left: 1.9rem;
   position: absolute;
   border-left: 2px solid grey;
-  height: 7rem;
+  height: 21rem;
   top: 3.8rem;
-}
-
-.objective__vert2 {
-  left: 1.9rem;
-  position: absolute;
-  border-left: 2px solid grey;
-  height: 8.2rem;
-  top: 14.7rem;
+  z-index: -1;
 }
 
 .money {

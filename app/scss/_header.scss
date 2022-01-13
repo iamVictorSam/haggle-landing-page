@@ -98,9 +98,17 @@ nav {
       font-weight: 800;
       transition: color 300ms ease-in-out;
 
+      // &:not(:last-child) {
+      //   margin-right: 32px;
+      // }
+
       &:not(:last-child) {
         margin-right: 32px;
       }
+      // &:not(:nth-child(3), :last-child){
+      //   margin-right: 32px;
+      // }
+
 
       &::before {
         content: "";
@@ -110,13 +118,15 @@ nav {
         left: 0;
         right: 0;
         bottom: -22px;
+    border-radius: 10px;  
+
         // background: linear-gradient(to right, $limeGreen, $brightCyan);
         background: $white;
         opacity: 0;
         transition: opacity 300ms ease-in-out;
       }
       &:hover {
-        color: $darkBlue;
+        color: grey;
 
         &::before {
           opacity: 1; 
@@ -125,6 +135,20 @@ nav {
     }
   }
 
- 
+  &__barger{
+    display: inline;
+    color: white; 
+    font-weight: 100;
+    font-size: 0.8rem;
+    background-color: red;
+    padding: 0px 5px;
+    border-radius: 10px;  
+
+    &::before{
+      opacity: 0;
+    }
+    // left:10;
+    // position: absolute;
+  }
 
 }

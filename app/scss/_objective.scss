@@ -1,5 +1,6 @@
 .objective {
-  background-color: $white; //changed this
+  background-color: $white; 
+  color:grey;
 
   .container {
     @include breakpoint-up(large) {
@@ -194,19 +195,20 @@
   &__contents{
 
     @include breakpoint-up(large) {
-      color: grey;
+      // color: black;
       grid-area: contents;
       margin-top: 15rem;
       position: relative;
+      z-index: 1;
     }
 
-      &:hover {
-        color: black;
+      // &:hover {
+      //   color: black;
   
-        &::before {
-          opacity: 1;
-        }
-      }
+      //   &::before {
+      //     opacity: 1;
+      //   }
+      // }
   }
 
   &__title{
@@ -221,15 +223,15 @@
     @include breakpoint-up(large) {
       font-weight: 400;
       font-size: 1rem;
-      color: black;
+      // color: black;
       }
-      &:hover {
-        color: grey;
+      // &:hover {
+      //   color: grey;
 
-        &::before {
-          opacity: 1;
-        }
-      }
+      //   &::before {
+      //     opacity: 1;
+      //   }
+      // }
   }
 
   &__content{
@@ -237,13 +239,13 @@
       flex: 18;
       max-width: 18rem;
     }
-    &:hover {
-      color: grey;
+    // &:hover {
+    //   color: grey;
 
-      &::before {
-        opacity: 1;
-      }
-    }
+    //   &::before {
+    //     opacity: 1;
+    //   }
+    // }
   }
 
   &__number{
@@ -256,17 +258,17 @@
     line-height:2.5em;
     text-align:center;
     border-radius:50%;
-    background:grey;
+    background:black;
     vertical-align:middle;
     margin-right:1em;
     color:white;
-    &:hover {
-      background: black;
+    // &:hover {
+    //   background: black;
 
-      &::before {
-        opacity: 1;
-      }
-    }
+    //   &::before {
+    //     opacity: 1;
+    //   }
+    // }
   }
   &__number3{
     @include breakpoint-up(large) {
@@ -282,14 +284,14 @@
       
     }
 
-    &:hover {
-      color: black;
-      // background-color: grey;
+    // &:hover {
+    //   color: black;
+    //   // background-color: grey;
 
-      &::before {
-        opacity: 1;
-      }
-    }
+    //   &::before {
+    //     opacity: 1;
+    //   }
+    // }
 
   }
 
@@ -297,21 +299,24 @@
     left: 1.9rem;
     position: absolute;
     border-left: 2px solid grey;
-    height: 7rem;
+    height: 21rem;
     top: 3.8rem;
+    z-index: -1;
 
 
     
   }
 
-  &__vert2{
-    left: 1.9rem;
-    position: absolute;
-    border-left: 2px solid grey;
-    height: 8.2rem;
-    top: 14.7rem;
+  // &__vert2{
+  //   left: 1.9rem;
+  //   position: absolute;
+  //   border-left: 2px solid grey;
+  //   height: 8.2rem;
+  //   top: 14.7rem;
 
 
     
-  }
+  // }
+
+  
 }
