@@ -10,7 +10,7 @@
   }
 
   // &__textfield {
-       // text-align: center;
+  // text-align: center;
   // }
 
   &__image {
@@ -87,11 +87,9 @@
     }
   }
 
-
-
   &__image3 {
     &::after {
-        background-image: url("/images/cloth-shop.svg");
+      background-image: url("/images/cloth-shop.svg");
       position: absolute;
       // background-image: url("/images/secondImg.png");
       background-size: cover;
@@ -104,12 +102,11 @@
     }
   }
 
-
   &__image2 {
-      position: absolute;
-      height: 22rem;
-      left: 20.5rem;
-      bottom: -6.0rem;
+    position: absolute;
+    height: 22rem;
+    left: 20.5rem;
+    bottom: -6rem;
   }
 
   &__image1 {
@@ -117,18 +114,18 @@
     height: 17rem;
     left: 18.06rem;
     bottom: 11.2rem;
-}
-//   &__image2 {
-//     position: absolute;
-//     // background-image: url("/images/secondImg.png");
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position: center center;
-//     min-height: 7.5rem;
-//     // max-height: 20px;
-//     left: 11.1825rem;
-//     bottom: 16rem;
-//   }
+  }
+  //   &__image2 {
+  //     position: absolute;
+  //     // background-image: url("/images/secondImg.png");
+  //     background-size: cover;
+  //     background-repeat: no-repeat;
+  //     background-position: center center;
+  //     min-height: 7.5rem;
+  //     // max-height: 20px;
+  //     left: 11.1825rem;
+  //     bottom: 16rem;
+  //   }
 
   &__text {
     text-align: center;
@@ -191,28 +188,26 @@
     }
   }
 
-
-
-  &__textfield-btn{
+  &__textfield-btn {
     margin: 0px;
     display: inline;
+    cursor: ponter;
     position: relative;
     border-radius: 0px 50px 50px 0px;
     // padding: px;
     padding-top: 0.7rem;
     padding-bottom: 0.9375rem;
     padding-left: 0.9375rem;
-    padding-right: 1.125rem;  
+    padding-right: 1.125rem;
     font-size: 17px;
-    left:-0.3125rem;
+    left: -0.3125rem;
     color: black;
     font-weight: 700;
     background-color: aqua;
 
-        @include firefox-only {
-          padding-top: 0.79rem;
-        }
-     
+    @include firefox-only {
+      padding-top: 0.79rem;
+    }
   }
 
   // &__container--bottom{
