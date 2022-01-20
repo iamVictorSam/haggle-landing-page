@@ -1,172 +1,161 @@
-.money{
-    background-color: $black; //changed this
-    
-    .container {
+.money {
+  background-color: $black; //changed this
 
-        @include breakpoint-up(large){
-            display: flex;
-            align-items: center;
-        }
+  .container {
+    @include breakpoint-up(large) {
+      display: flex;
+      align-items: center;
     }
-    
+  }
 
-    &__image{
-        position: relative;
+  &__image {
+    position: relative;
+    // background-image: url("/images/money.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 17.5rem;
+
+    @include breakpoint-up(medium) {
+      min-height: 25rem;
+      background-position: center;
+    }
+
+    @include breakpoint-up(large) {
+      flex: 1;
+      order: 2;
+      min-height: 41rem;
+      background-image: none;
+      // background-image: url("/images/bg-intro-desktop.svg");
+      // background-position: left center;
+    }
+
+    // before is a pseudo element -whats a pseudo element
+    // when you have a pseudo element on the page you need give it a content element
+
+    &::before {
+      @include breakpoint-up(large) {
+        content: "";
+        position: absolute;
+        height: 100%;
+        // width: 100%;
         // background-image: url("/images/money.svg");
-        background-size: cover;
         background-repeat: no-repeat;
-        background-position: center center;
-        min-height: 17.5rem;
-
-        @include breakpoint-up(medium){
-            min-height: 25rem;
-            background-position: center;
-        }
-
-        @include breakpoint-up(large){
-            flex: 3;
-            order: 2;
-            min-height: 41rem;
-            background-image: none;
-            // background-image: url("/images/bg-intro-desktop.svg");
-            // background-position: left center;
-        }
-
-        // before is a pseudo element -whats a pseudo element
-        // when you have a pseudo element on the page you need give it a content element
-     
-
-       
-
-        &::before{
-            @include breakpoint-up(large){
-                content: "";
-                position: absolute;
-                height: 100%;
-                // width: 100%;
-                // background-image: url("/images/money.svg");
-                background-repeat: no-repeat;
-                background-position: center bottom;
-                width: 150%;
-                background-size: 122%;                 
-                background-position: 0% 83%;
-            }   
-        }
-       
-        
-        &::after{
-            content: "";
-            position: absolute;
-            
-
-            // width: 82%;
-            // height: 97%;
-            height: 100%;
-            width: 72%;
-            background-image: url("/images/money.svg");
-            background-size: 91%;
-            background-repeat: no-repeat;
-            background-position: center;
-
-            // width: 82%;
-            // height: 97%;
-            // background-size: 91%;
-            background-position: right 24%;
-            right: 24%;
-
-            @include breakpoint-up(medium){
-                background-size: 52%;
-            }
-
-            @include breakpoint-up(large){
-                width: 82%;
-                height: 97%;
-                background-size: 91%;
-                background-position: right 24%;
-                right: -1%;
-                // width: 120%;
-                // height: 122%;
-                // background-size: 94%;
-                // background-position: center 150%;
-                // left: 22%;
-            }
-        }
+        background-position: center bottom;
+        width: 150%;
+        background-size: 122%;
+        background-position: 0% 83%;
+      }
     }
 
-    &__text{
-        text-align: center;
+    &::after {
+      content: "";
+      position: absolute;
 
-        @include breakpoint-up(large){
-            flex: 2;
-            order: 1;
-            text-align: left;
+      // width: 82%;
+      // height: 97%;
+      height: 100%;
+      width: 72%;
+      background-image: url("/images/money.svg");
+      background-size: 91%;
+      background-repeat: no-repeat;
+      background-position: center;
 
-        }
+      // width: 82%;
+      // height: 97%;
+      // background-size: 91%;
+      background-position: right 24%;
+      right: 24%;
 
-        h1{
-            font-weight: 700;
-            font-size: 2.31rem;
-            line-height: 1.15;
-            color: $white;
-            margin-bottom: 1.5rem;
+      @include breakpoint-up(medium) {
+        background-size: 52%;
+      }
 
-            @include breakpoint-up(large){
-                font-size: $font-xlg;
-                // font-size: 12.8125rem;
-            }
-        }
+      @include breakpoint-up(large) {
+        width: 82%;
+        height: 97%;
+        background-size: 91%;
+        background-position: right 24%;
+        right: -1%;
+        // width: 120%;
+        // height: 122%;
+        // background-size: 94%;
+        // background-position: center 150%;
+        // left: 22%;
+      }
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    @include breakpoint-up(large) {
+      flex: 1;
+      order: 1;
+      text-align: left;
     }
 
-    p{
-        line-height: 1.5;
-        margin-bottom: 2.25rem;
-        color: $white;
+    h1 {
+      font-weight: 700;
+      font-size: 2.31rem;
+      line-height: 1.15;
+      color: $white;
+      margin-bottom: 1.5rem;
+
+      @include breakpoint-up(large) {
+        font-size: 4rem; // font-size: 12.8125rem;
+        margin-top: 4.375rem;
+      }
+    }
+  }
+
+  p {
+    line-height: 1.5;
+    margin-bottom: 2.25rem;
+    color: $white;
+
+    @include breakpoint-up(large) {
+      font-size: 1.5625rem;
+    }
+  }
+
+  &__apple-store {
+    @include breakpoint-up(large) {
+      padding-top: 1.125rem;
+      padding-left: 1.125rem;
+      padding-bottom: 0.625rem;
+    }
+    @include breakpoint-up(medium) {
+      padding-top: 1.125rem;
+      padding-left: 1.125rem;
+      padding-bottom: 0.625rem;
+    }
+    @include breakpoint-down(small) {
+      display: block;
+      // padding-top: 0.625rem;
+    }
+  }
+
+  &__apple-store {
+    @include breakpoint-up(large) {
+      padding-top: 0.625rem;
+    }
+    @include breakpoint-up(medium) {
+      padding-top: 0.625rem;
     }
 
-    &__apple-store{
-        @include breakpoint-up(large){
-            padding-top: 1.125rem;
-            padding-left:1.125rem;
-            padding-bottom: 0.625rem;
-            
-        }
-        @include breakpoint-up(medium){
-            padding-top: 1.125rem;
-            padding-left:1.125rem;
-            padding-bottom: 0.625rem;
-            
-        }
-        @include breakpoint-down(small){
-            display: block;
-            // padding-top: 0.625rem;
-        }
+    @include breakpoint-down(small) {
+      display: block;
+      margin: auto;
+      text-align: center;
     }
+  }
 
-    &__apple-store{
-        @include breakpoint-up(large){
-            
-            padding-top: 0.625rem;
-        }
-        @include breakpoint-up(medium){
-            
-            padding-top: 0.625rem;
-        }
+  &__textfield {
+    height: 1.5rem;
 
-        @include breakpoint-down(small){
-            display: block;
-            margin: auto;
-            text-align: center;
-        
-        }
-
-    }
-
-    &__textfield{
-        padding-top: 0.78rem;
-
-        // @include firefox-only {
-        //     padding-top: 0.79rem;
-        //   }
-       
-    }
+    // @include firefox-only {
+    //     padding-top: 0.79rem;
+    //   }
+  }
 }

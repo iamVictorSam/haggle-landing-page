@@ -1,6 +1,6 @@
 .objective {
-  background-color: $white; 
-  color:grey;
+  background-color: $white;
+  color: grey;
 
   .container {
     @include breakpoint-up(large) {
@@ -21,7 +21,7 @@
   }
 
   &__image {
-      padding-top: 4.5625rem;
+    padding-top: 4.5625rem;
     position: relative;
     // background-image: url("/images/secondImg.png");
     background-size: cover;
@@ -32,7 +32,6 @@
     min-height: 17.5rem;
     right: -80px;
     bottom: -46px;
-
 
     @include breakpoint-up(medium) {
       min-height: 25rem;
@@ -51,8 +50,6 @@
 
     // before is a pseudo element -whats a pseudo element
     // when you have a pseudo element on the page you need give it a content element
-
-    
   }
 
   &__image2 {
@@ -89,7 +86,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 17.5rem;
-    
+
     bottom: 23rem;
     right: -9.3rem;
     // right: -26.375rem;
@@ -104,7 +101,7 @@
       flex: 1;
       background-image: none;
       right: -9.5rem;
-    bottom: 59.25rem;
+      bottom: 59.25rem;
       // min-height: 41rem;
       // background-image: url("/images/bg-intro-desktop.svg");
       // background-position: left center;
@@ -134,8 +131,6 @@
         // font-size: 12.8125rem;
       }
     }
-
-   
   }
 
   p {
@@ -176,24 +171,21 @@
     }
   }
 
-  &__image1{
+  &__image1 {
     height: 15.25rem;
     @include breakpoint-up(large) {
       height: 35.25rem;
-
-      }
+    }
   }
 
-  &__imagecontainer{
+  &__imagecontainer {
     @include breakpoint-up(large) {
       grid-area: image;
       max-height: 50rem;
-
-      }
+    }
   }
 
-  &__contents{
-
+  &__contents {
     @include breakpoint-up(large) {
       // color: black;
       grid-area: contents;
@@ -202,39 +194,39 @@
       z-index: 1;
     }
 
-      // &:hover {
-      //   color: black;
-  
-      //   &::before {
-      //     opacity: 1;
-      //   }
-      // }
+    // &:hover {
+    //   color: black;
+
+    //   &::before {
+    //     opacity: 1;
+    //   }
+    // }
   }
 
-  &__title{
+  &__title {
     @include breakpoint-up(large) {
       margin-bottom: 0.8rem;
       font-weight: 700;
       font-size: 1.5625rem;
-      }
+    }
   }
 
-  &__desc{
+  &__desc {
     @include breakpoint-up(large) {
       font-weight: 400;
       font-size: 1rem;
       // color: black;
-      }
-      // &:hover {
-      //   color: grey;
+    }
+    // &:hover {
+    //   color: grey;
 
-      //   &::before {
-      //     opacity: 1;
-      //   }
-      // }
+    //   &::before {
+    //     opacity: 1;
+    //   }
+    // }
   }
 
-  &__content{
+  &__content {
     @include breakpoint-up(large) {
       flex: 18;
       max-width: 18rem;
@@ -248,20 +240,20 @@
     // }
   }
 
-  &__number{
+  &__number {
     // display:inline-block;
     flex: 2;
-    font-size:1.5125rem;
+    font-size: 1.5125rem;
     font-weight: 900;
-    width:3.925rem;
-    height:3.925rem;
-    line-height:2.5em;
-    text-align:center;
-    border-radius:50%;
-    background:black;
-    vertical-align:middle;
-    margin-right:1em;
-    color:white;
+    width: 3.925rem;
+    height: 3.925rem;
+    line-height: 2.5em;
+    text-align: center;
+    border-radius: 50%;
+    background: black;
+    vertical-align: middle;
+    margin-right: 1em;
+    color: white;
     // &:hover {
     //   background: black;
 
@@ -270,18 +262,17 @@
     //   }
     // }
   }
-  &__number3{
+  &__number3 {
     @include breakpoint-up(large) {
       display: inline;
     }
   }
 
-  &__textContents{
+  &__textContents {
     // display: inline-block;
     @include breakpoint-up(large) {
       display: inline-flex;
       margin-bottom: 3rem;
-      
     }
 
     // &:hover {
@@ -292,19 +283,15 @@
     //     opacity: 1;
     //   }
     // }
-
   }
 
-  &__vert{
+  &__vert {
     left: 1.9rem;
     position: absolute;
     border-left: 2px solid grey;
     height: 21rem;
     top: 3.8rem;
     z-index: -1;
-
-
-    
   }
 
   // &__vert2{
@@ -314,9 +301,11 @@
   //   height: 8.2rem;
   //   top: 14.7rem;
 
-
-    
   // }
 
-  
+  &__trench {
+    position: relative;
+    bottom: 100px;
+    left: -20px;
+  }
 }

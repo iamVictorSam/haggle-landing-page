@@ -1,5 +1,6 @@
 .hero {
   background-color: $black; //changed this
+  padding-top: 3.75rem;
 
   .container {
     @include breakpoint-up(large) {
@@ -9,9 +10,12 @@
     }
   }
 
-  // &__textfield {
-  // text-align: center;
-  // }
+  &__textfield {
+    margin-top: 3.125rem;
+
+    display: flex;
+    max-height: 52px;
+  }
 
   &__image {
     position: relative;
@@ -27,7 +31,7 @@
     }
 
     @include breakpoint-up(large) {
-      flex: 3;
+      flex: 1;
       order: 2;
 
       min-height: 41rem;
@@ -42,18 +46,28 @@
     &::before {
       @include breakpoint-up(large) {
         content: "";
+        // position: absolute;
+        // height: 96%;
+        // // width: 100%;
+        // background-image: url("/images/Ellipse.svg");
+        // background-repeat: no-repeat;
+        // background-position: center bottom;
+        // // width: 150%;
+        // // background-size: 32%;
+        // width: 400%;
+        // background-size: 12%;
+        // background-position: 0% 83%;
+        // left: 52%;
+
         position: absolute;
-        height: 96%;
-        // width: 100%;
-        background-image: url("/images/Ellipse.svg");
+        height: 86%;
+        background-image: url(/images/Ellipse.svg);
         background-repeat: no-repeat;
         background-position: center bottom;
-        // width: 150%;
-        // background-size: 32%;
-        width: 400%;
-        background-size: 12%;
+        width: 465%;
+        background-size: 13%;
         background-position: 0% 83%;
-        left: 52%;
+        left: 42%;
       }
     }
 
@@ -77,12 +91,13 @@
         // background-size: 94%;
         // background-position: center 150%;
         // left: 22%;
+
         width: 81%;
-        height: 104%;
-        background-size: 47%;
+        height: 103%;
+        background-size: 68%;
         background-position: center 15%;
-        left: 37%;
-        top: 27%;
+        left: 34%;
+        top: 13%;
       }
     }
   }
@@ -104,17 +119,18 @@
 
   &__image2 {
     position: absolute;
-    height: 22rem;
-    left: 20.5rem;
+    height: 25.5rem;
+    left: 10rem;
     bottom: -6rem;
   }
 
   &__image1 {
     position: absolute;
-    height: 17rem;
-    left: 18.06rem;
+    height: 25rem;
+    left: 6.5rem;
     bottom: 11.2rem;
   }
+
   //   &__image2 {
   //     position: absolute;
   //     // background-image: url("/images/secondImg.png");
@@ -131,7 +147,7 @@
     text-align: center;
 
     @include breakpoint-up(large) {
-      flex: 2;
+      flex: 1;
       order: 1;
       text-align: left;
     }
@@ -144,8 +160,7 @@
       margin-bottom: 1.5rem;
 
       @include breakpoint-up(large) {
-        font-size: $font-xlg;
-        // font-size: 12.8125rem;
+        font-size: 4.2875rem; // font-size: 12.8125rem;
       }
     }
   }
@@ -154,6 +169,10 @@
     line-height: 1.5;
     margin-bottom: 2.25rem;
     color: $white;
+
+    @include breakpoint-up(large) {
+      font-size: 1.5625rem;
+    }
   }
 
   &__apple-store {
@@ -188,29 +207,57 @@
     }
   }
 
-  &__textfield-btn {
-    margin: 0px;
-    display: inline;
-    cursor: ponter;
+  &__barger {
     position: relative;
-    border-radius: 0px 50px 50px 0px;
-    // padding: px;
-    padding-top: 0.7rem;
-    padding-bottom: 0.9375rem;
-    padding-left: 0.9375rem;
-    padding-right: 1.125rem;
-    font-size: 17px;
-    left: -0.3125rem;
-    color: black;
-    font-weight: 700;
-    background-color: aqua;
-
-    @include firefox-only {
-      padding-top: 0.79rem;
-    }
+    left: 2rem;
+    top: -1.75rem;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
-  // &__container--bottom{
-  //   margin-bottom: 4rem;
-  // }
+  &__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__pad {
+    margin-top: 3rem;
+  }
+}
+
+input[type="text"] {
+  // height: 70px;
+  width: 50%;
+  height: 3.125rem;
+  background-color: white;
+  border-radius: 50px 0px 0px 50px;
+  padding-left: 2.5rem;
+  border: none;
+
+  &:focus {
+    outline: 0;
+  }
+}
+input[type="submit"] {
+  left: -5px;
+  position: relative;
+  border-radius: 0 50px 50px 0;
+  width: 11.875rem;
+  height: 3.125rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #7bf9b5;
+  color: black;
+}
+// &__container--bottom{
+//   margin-bottom: 4rem;
+// }
+
+.text-padding {
+  padding-left: 4rem;
 }

@@ -253,6 +253,7 @@ button:hover, .button:hover {
   .header nav {
     padding-top: 0.0625rem;
     padding-bottom: 0.0625rem;
+    border-bottom: 0.2px solid;
   }
 }
 
@@ -263,8 +264,9 @@ button:hover, .button:hover {
 
 @media (min-width: 64em) {
   .header__logo img {
-    width: 8.6875rem;
+    width: 9.6875rem;
     height: 3.9375rem;
+    padding-left: 31px;
   }
 }
 
@@ -322,7 +324,7 @@ button:hover, .button:hover {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -22px;
+  bottom: -26px;
   border-radius: 10px;
   background: white;
   opacity: 0;
@@ -342,46 +344,16 @@ button:hover, .button:hover {
   display: inline;
   color: white;
   font-weight: 100;
-  font-size: 0.8rem;
-  background-color: red;
-  padding: 0px 5px;
+  font-size: 0.7rem;
+  background-color: #f75f41;
+  padding: 2px 8px;
   border-radius: 10px;
+  font-weight: bold;
+  margin-left: 10px;
 }
 
 .header__barger::before {
   opacity: 0;
-}
-
-input[type=text] {
-  width: 50%;
-  background-size: 3.5%;
-  background-color: white;
-  border-radius: 50px 0px 0px 50px;
-  background-position: 50px 16px;
-  background-repeat: no-repeat;
-  margin-top: 2.5rem;
-  padding-left: 2.5rem;
-  border: 0;
-}
-
-input[type=text]:focus {
-  outline: 0;
-}
-
-input[type=text]::-webkit-input-placeholder {
-  font-weight: bold;
-}
-
-input[type=text]::-moz-placeholder {
-  font-weight: bold;
-}
-
-input[type=text]:-ms-input-placeholder {
-  font-weight: bold;
-}
-
-input[type=text]:-moz-placeholder {
-  font-weight: bold;
 }
 
 .navigator.open .overlay {
@@ -509,6 +481,7 @@ input[type=text]:-moz-placeholder {
 
 .hero {
   background-color: black;
+  padding-top: 3.75rem;
 }
 
 @media (min-width: 64em) {
@@ -520,6 +493,14 @@ input[type=text]:-moz-placeholder {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.hero__textfield {
+  margin-top: 3.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 52px;
 }
 
 .hero__image {
@@ -540,9 +521,9 @@ input[type=text]:-moz-placeholder {
 
 @media (min-width: 64em) {
   .hero__image {
-    -webkit-box-flex: 3;
-        -ms-flex: 3;
-            flex: 3;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -555,14 +536,14 @@ input[type=text]:-moz-placeholder {
   .hero__image::before {
     content: "";
     position: absolute;
-    height: 96%;
-    background-image: url("/images/Ellipse.svg");
+    height: 86%;
+    background-image: url(/images/Ellipse.svg);
     background-repeat: no-repeat;
     background-position: center bottom;
-    width: 400%;
-    background-size: 12%;
+    width: 465%;
+    background-size: 13%;
     background-position: 0% 83%;
-    left: 52%;
+    left: 42%;
   }
 }
 
@@ -586,11 +567,11 @@ input[type=text]:-moz-placeholder {
 @media (min-width: 64em) {
   .hero__image::after {
     width: 81%;
-    height: 104%;
-    background-size: 47%;
+    height: 103%;
+    background-size: 68%;
     background-position: center 15%;
-    left: 37%;
-    top: 27%;
+    left: 34%;
+    top: 13%;
   }
 }
 
@@ -606,15 +587,15 @@ input[type=text]:-moz-placeholder {
 
 .hero__image2 {
   position: absolute;
-  height: 22rem;
-  left: 20.5rem;
-  bottom: -6.0rem;
+  height: 25.5rem;
+  left: 10rem;
+  bottom: -6rem;
 }
 
 .hero__image1 {
   position: absolute;
-  height: 17rem;
-  left: 18.06rem;
+  height: 25rem;
+  left: 6.5rem;
   bottom: 11.2rem;
 }
 
@@ -624,9 +605,9 @@ input[type=text]:-moz-placeholder {
 
 @media (min-width: 64em) {
   .hero__text {
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -644,7 +625,7 @@ input[type=text]:-moz-placeholder {
 
 @media (min-width: 64em) {
   .hero__text h1 {
-    font-size: 3.25rem;
+    font-size: 4.2875rem;
   }
 }
 
@@ -652,6 +633,12 @@ input[type=text]:-moz-placeholder {
   line-height: 1.5;
   margin-bottom: 2.25rem;
   color: white;
+}
+
+@media (min-width: 64em) {
+  .hero p {
+    font-size: 1.5625rem;
+  }
 }
 
 @media (min-width: 64em) {
@@ -696,26 +683,56 @@ input[type=text]:-moz-placeholder {
   }
 }
 
-.hero__textfield-btn {
-  margin: 0px;
-  display: inline;
+.hero__barger {
   position: relative;
-  border-radius: 0px 50px 50px 0px;
-  padding-top: 0.7rem;
-  padding-bottom: 0.9375rem;
-  padding-left: 0.9375rem;
-  padding-right: 1.125rem;
-  font-size: 17px;
-  left: -0.3125rem;
-  color: black;
-  font-weight: 700;
-  background-color: aqua;
+  left: 2rem;
+  top: -1.75rem;
+  font-weight: bold;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
-@-moz-document url-prefix() {
-  .hero__textfield-btn {
-    padding-top: 0.79rem;
-  }
+.hero__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.hero__pad {
+  margin-top: 3rem;
+}
+
+input[type="text"] {
+  width: 50%;
+  height: 3.125rem;
+  background-color: white;
+  border-radius: 50px 0px 0px 50px;
+  padding-left: 2.5rem;
+  border: none;
+}
+
+input[type="text"]:focus {
+  outline: 0;
+}
+
+input[type="submit"] {
+  left: -5px;
+  position: relative;
+  border-radius: 0 50px 50px 0;
+  width: 11.875rem;
+  height: 3.125rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #7bf9b5;
+  color: black;
+}
+
+.text-padding {
+  padding-left: 4rem;
 }
 
 .objective {
@@ -991,6 +1008,12 @@ input[type=text]:-moz-placeholder {
   z-index: -1;
 }
 
+.objective__trench {
+  position: relative;
+  bottom: 100px;
+  left: -20px;
+}
+
 .money {
   background-color: black;
 }
@@ -1023,9 +1046,9 @@ input[type=text]:-moz-placeholder {
 
 @media (min-width: 64em) {
   .money__image {
-    -webkit-box-flex: 3;
-        -ms-flex: 3;
-            flex: 3;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -1082,9 +1105,9 @@ input[type=text]:-moz-placeholder {
 
 @media (min-width: 64em) {
   .money__text {
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -1102,7 +1125,8 @@ input[type=text]:-moz-placeholder {
 
 @media (min-width: 64em) {
   .money__text h1 {
-    font-size: 3.25rem;
+    font-size: 4rem;
+    margin-top: 4.375rem;
   }
 }
 
@@ -1110,6 +1134,12 @@ input[type=text]:-moz-placeholder {
   line-height: 1.5;
   margin-bottom: 2.25rem;
   color: white;
+}
+
+@media (min-width: 64em) {
+  .money p {
+    font-size: 1.5625rem;
+  }
 }
 
 @media (min-width: 64em) {
@@ -1155,7 +1185,7 @@ input[type=text]:-moz-placeholder {
 }
 
 .money__textfield {
-  padding-top: 0.78rem;
+  height: 1.5rem;
 }
 
 .footer {
