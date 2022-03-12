@@ -16,6 +16,9 @@
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 17.5rem;
+    @include breakpoint-down(medium) {
+      display: none;
+    }
 
     @include breakpoint-up(medium) {
       min-height: 25rem;
@@ -56,7 +59,7 @@
       // width: 82%;
       // height: 97%;
       height: 100%;
-      width: 72%;
+      width: 100%;
       background-image: url("/images/RecImage.png");
       background-size: 91%;
       background-repeat: no-repeat;
@@ -84,6 +87,15 @@
         // background-position: center 150%;
         // left: 22%;
       }
+    }
+  }
+
+  &__mobileImage {
+    // min-height: 41rem;
+    height: 100%;
+    width: 100%;
+    @include breakpoint-up(large) {
+      display: none;
     }
   }
 
