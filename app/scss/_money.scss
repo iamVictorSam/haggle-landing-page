@@ -5,6 +5,7 @@
     @include breakpoint-up(large) {
       display: flex;
       align-items: center;
+      max-width: 100%;
     }
   }
 
@@ -56,7 +57,7 @@
       // height: 97%;
       height: 100%;
       width: 72%;
-      background-image: url("/images/money.svg");
+      background-image: url("/images/RecImage.png");
       background-size: 91%;
       background-repeat: no-repeat;
       background-position: center;
@@ -73,7 +74,7 @@
 
       @include breakpoint-up(large) {
         width: 82%;
-        height: 97%;
+        height: 100%;
         background-size: 91%;
         background-position: right 24%;
         right: -1%;
@@ -107,6 +108,10 @@
         margin-top: 4.375rem;
       }
     }
+  }
+
+  &__color-text {
+    color: #ff0068;
   }
 
   p {

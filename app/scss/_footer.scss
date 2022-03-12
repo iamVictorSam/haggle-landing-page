@@ -1,13 +1,12 @@
 .footer {
   background-color: $white;
   color: $black;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 4.5rem;
+  padding-bottom: 7.5rem;
   text-align: center;
-  
+
   @include breakpoint-up(large) {
     text-align: left;
-
   }
   .container {
     @include breakpoint-up(large) {
@@ -36,24 +35,20 @@
     @include breakpoint-up(large) {
       grid-area: logo;
       margin-bottom: 1.25rem;
-
     }
   }
 
-  &__simpleText{
+  &__simpleText {
     @include breakpoint-up(large) {
-
       display: block;
       margin-bottom: 4.25rem;
       max-width: 290px;
       font-size: 0.875rem;
       text-align: left;
     }
-     
-    
   }
 
-  &__sponsor{
+  &__sponsor {
     @include breakpoint-up(large) {
       align-self: start;
       display: block;
@@ -61,9 +56,8 @@
     }
   }
 
-  &__simpleText2{
+  &__simpleText2 {
     @include breakpoint-up(large) {
-
       display: block;
       margin-bottom: 1.25rem;
       max-width: 290px;
@@ -73,8 +67,6 @@
     }
   }
 
-
-
   &__social {
     @include breakpoint-down(medium) {
       margin-bottom: 1.875rem;
@@ -83,13 +75,11 @@
     @include breakpoint-up(large) {
       grid-area: social;
       align-self: end;
-
     }
 
     a {
       display: inline-block;
       height: 1.625rem;
-     
     }
 
     a:not(:last-child) {
@@ -102,14 +92,11 @@
     flex-direction: column;
     align-items: center;
     font-size: 0.9375rem;
-   
+
     @include breakpoint-up(large) {
       justify-content: space-between;
       align-items: start;
       max-height: 30px;
-
-     
-  
     }
 
     &.col1 {
@@ -124,18 +111,18 @@
     }
 
     &.col2 {
-        @include breakpoint-up(large) {
-          grid-area: links2;
+      @include breakpoint-up(large) {
+        grid-area: links2;
         padding-top: 2.5rem;
 
         //   margin-bottom: 10px;
         // justify-content: none;
-        }
-
-        > a:first-child {
-          font-weight: bold;
-        }
       }
+
+      > a:first-child {
+        font-weight: bold;
+      }
+    }
 
     // &.col2 {
     //   @include breakpoint-down(medium) {
@@ -153,7 +140,6 @@
       @include breakpoint-up(large) {
         grid-area: links3;
         padding-top: 2.5rem;
-
       }
 
       > a:first-child {
@@ -164,13 +150,10 @@
     &.col4 {
       @include breakpoint-down(medium) {
         margin-bottom: 1.875rem;
-        
       }
       @include breakpoint-up(large) {
         grid-area: links4;
         padding-top: 2.5rem;
-        
-
       }
       > a:first-child {
         font-weight: bold;
@@ -184,8 +167,7 @@
       @include breakpoint-up(large) {
         padding-top: 2.5rem;
         grid-area: links5;
-      max-height: 50px;
-
+        max-height: 50px;
       }
       > a:first-child {
         font-weight: bold;
@@ -193,62 +175,53 @@
     }
 
     &.col6 {
-        @include breakpoint-up(large) {
-          grid-area: links6;
-          align-self: start;
-          justify-self: start;
+      @include breakpoint-up(large) {
+        grid-area: links6;
+        align-self: start;
+        justify-self: start;
         padding-top: 2.5rem;
         max-height: 125px;
-          max-width: 300px;
+        max-width: 300px;
+      }
+      > a:first-child {
+        font-weight: bold;
 
-        }
-        > a:first-child {
-          font-weight: bold;
-
-          &:hover {
-            color: black;
-            // background-color: grey;
-      
-           }
+        &:hover {
+          color: black;
+          // background-color: grey;
         }
       }
-      
-
-
+    }
 
     a {
       line-height: 2.25;
 
       font-size: 0.875rem;
 
-      
-
-  
-
       &:hover {
         color: grey;
         // background-color: grey;
-  
+
         &::before {
           opacity: 1;
-        }}
+        }
+      }
     }
-
   }
 
-//   &__cta {
-//     @include breakpoint-up(large) {
-//       grid-area: cta;
-//       justify-self: end;
-//       text-align: right;
-//     }
+  //   &__cta {
+  //     @include breakpoint-up(large) {
+  //       grid-area: cta;
+  //       justify-self: end;
+  //       text-align: right;
+  //     }
 
-//     a.button {
-//       @include breakpoint-down(medium) {
-//         margin-bottom: 1.875rem;
-//       }
-//     }
-//   }
+  //     a.button {
+  //       @include breakpoint-down(medium) {
+  //         margin-bottom: 1.875rem;
+  //       }
+  //     }
+  //   }
 
   &__copyright {
     font-size: 0.8125rem;
@@ -258,16 +231,18 @@
     padding: 1rem;
 
     @include breakpoint-up(large) {
-
       justify-self: end;
       align-self: end;
     }
   }
 
-  &__images{
-    position: absolute;
-    top: 176rem;
-    left: 21.5rem;
+  &__images {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    // position: absolute;
+    // top: 176rem;
+    // left: 21.5rem;
   }
 
   &__apple-store {
@@ -301,5 +276,4 @@
       text-align: center;
     }
   }
-
 }
