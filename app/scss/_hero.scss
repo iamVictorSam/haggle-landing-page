@@ -220,9 +220,9 @@
     height: 37px;
     width: 87px;
     @include breakpoint-up(large) {
-      // height: 100%;
-      // width: 100;
-      height: 20rem;
+      height: 10%;
+      width: 10rem;
+      height: 5rem;
       // height: 20rem;
     }
   }
@@ -230,7 +230,7 @@
   &__apple-store {
     @include breakpoint-up(large) {
       padding-top: 1.125rem;
-      padding-left: 1.125rem;
+      // padding-left: 1.125rem;
       padding-bottom: 0.625rem;
     }
     @include breakpoint-up(medium) {
@@ -266,8 +266,8 @@
     font-size: 8px;
     @include breakpoint-up(large) {
       position: relative;
-      left: 2rem;
-      top: -1.75rem;
+      left: 25rem;
+      top: -4.25rem;
       font-weight: bold;
       padding-left: 8px;
       padding-right: 8px;

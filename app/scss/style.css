@@ -669,14 +669,15 @@ button:hover, .button:hover {
 
 @media (min-width: 64em) {
   .hero__google-play {
-    height: 20rem;
+    height: 10%;
+    width: 10rem;
+    height: 5rem;
   }
 }
 
 @media (min-width: 64em) {
   .hero__apple-store {
     padding-top: 1.125rem;
-    padding-left: 1.125rem;
     padding-bottom: 0.625rem;
   }
 }
@@ -724,8 +725,8 @@ button:hover, .button:hover {
 @media (min-width: 64em) {
   .hero__barger {
     position: relative;
-    left: 2rem;
-    top: -1.75rem;
+    left: 25rem;
+    top: -4.25rem;
     font-weight: bold;
     padding-left: 8px;
     padding-right: 8px;
