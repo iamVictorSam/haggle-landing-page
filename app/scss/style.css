@@ -1108,11 +1108,19 @@ input[type="submit"] {
   }
 }
 
+.objective__imagecontainer {
+  display: none;
+}
+
 @media (min-width: 64em) {
   .objective__imagecontainer {
     grid-area: image;
     max-height: 50rem;
   }
+}
+
+.objective__contents {
+  display: none;
 }
 
 @media (min-width: 64em) {
@@ -1403,6 +1411,7 @@ input[type="submit"] {
 }
 
 .footer {
+  display: none;
   background-color: white;
   color: black;
   padding-top: 4.5rem;
@@ -1412,6 +1421,14 @@ input[type="submit"] {
 
 @media (min-width: 64em) {
   .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: white;
+    color: black;
+    padding-top: 4.5rem;
+    padding-bottom: 7.5rem;
+    text-align: center;
     text-align: left;
   }
 }

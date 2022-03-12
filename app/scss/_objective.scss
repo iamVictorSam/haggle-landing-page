@@ -180,7 +180,7 @@
   }
 
   &__imagecontainer {
-    // display: none;
+    display: none;
     @include breakpoint-up(large) {
       grid-area: image;
       max-height: 50rem;
@@ -188,7 +188,7 @@
   }
 
   &__contents {
-    // display: none;
+    display: none;
 
     @include breakpoint-up(large) {
       // color: black;
