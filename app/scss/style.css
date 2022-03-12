@@ -1664,10 +1664,13 @@ input[type="submit"] {
   text-align: center;
   background-color: black;
   padding: 1rem;
+  color: #000;
+  background-color: #ffe8f1;
 }
 
 @media (min-width: 64em) {
   .footer__copyright {
+    display: none;
     -ms-grid-column-align: end;
         justify-self: end;
     -ms-flex-item-align: end;

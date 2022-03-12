@@ -236,8 +236,11 @@
     text-align: center;
     background-color: black;
     padding: 1rem;
+    color: #000;
+    background-color: #ffe8f1;
 
     @include breakpoint-up(large) {
+      display: none;
       justify-self: end;
       align-self: end;
     }
